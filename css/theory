@@ -1,0 +1,50 @@
+cascade
+
+specificity
+
+inline
+#id
+.classes, :pseudo-classes, [attribute]
+<tags> ::psudo-tags
+
+combinators
+
+    adjacent sibling: first p inmediatelly following a div next to in same parent
+        div + p{
+
+        }
+
+    general: all p following a div in same parent
+    div ~ p {
+
+    }
+
+    child: direct child p of a div(first level)
+    div > p{
+
+    }
+
+    descendant: all p inside a div, in any level
+    div p{
+
+    }
+
+    selectors
+
+        div, .class-a, #main-title, [disabled], *
+    properties
+        background, color, width
+
+
+box model
+    marging, border, padding
+    margin collapsing: 2 consecutive elements with argins, are collapsed into one, can be overwritten with margin-top and bottom
+    box-sizing  => content-box => only content   
+                => border-box includes de porder and padding (used with * selector for all elements or collides with block elements)
+
+    display inline-block=> elements dont use 100% only whats necessarty like inline, but still have margin and padding like a block
+            inline=> marging and padding top and bottom dont make effect
+
+
+psudo  classes: defines state
+        elements: defines part
