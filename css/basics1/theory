@@ -48,3 +48,5 @@ box model
 
 psudo  classes: defines state
         elements: defines part
+
+!important ==> not advisable => overwrites specificity and selectors
