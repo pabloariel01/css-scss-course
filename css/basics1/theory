@@ -50,3 +50,27 @@ psudo  classes: defines state
         elements: defines part
 
 !important ==> not advisable => overwrites specificity and selectors
+
+outline => similar to border, but not part of box model
+
+positions   static: default
+            fixed: relative to view port, outside of the document flow
+            absolute: relative to most closest parent with position set(or html), and takes out of document flow
+            relative: doestnt take off the doc flow, relative to closest ancestor with postion set(relative to itself)
+            sticky: behaves as fixed, until reach the end of the parent container, needs a top (distance from viewport to elm margin)(relative to viewport and other element)
+
+            z-index onlyworks for position diferent of static
+                if position is fixed, z index only affects to elements inside the parent (stacking context -- affects inside the current context)
+
+            stacking context for fixed/sticky or absolute/relative and z-indez => defines the tscking of child elements
+
+
+images
+        background size
+            cover: ensures all space is used (fill container)
+            contain: full image visible, respects the ratio
+            background-clip: if exterds over borders (content)
+            background attachment: scrolling behavior
+            background-origin: defines image container content-box => container with no paddings
+
+    images and %, only works when parent has a heigh/width and ins a block/ inline-block
