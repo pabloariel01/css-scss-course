@@ -69,7 +69,6 @@ body {
   margin: 0.6rem 0;
 }
 
-
 .button {
   background: #0e4f1f;
   color: white;
@@ -199,4 +198,8 @@ body {
 
 .mobile-nav__item a {
   font-size: 1.5rem;
+}
+
+.open {
+  display: block !important;
 }
