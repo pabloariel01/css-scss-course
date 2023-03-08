@@ -96,3 +96,31 @@ attribute selectors
     [href$=".de"] suffix ej href=ab.de
     [src*="cdn"] at least one value ej i.cdn.de
     [src*="cdn" i] case insensitive ej i.CDN.com
+
+
+flexbox
+    container
+        display: flex turns into a flex container=> flex-flow, justify-content, align-content, align-items
+        children are flex items=> order, flex, align-self
+
+        flex-wrap => if values should wrap and direction (move to other line if it has no space )
+        flex-direction=> column: diplay as column(block) main to down
+            column-reverse=> main to top, cross to right
+            row: axis:  (main left to right, cross top-bot) main to right
+            row-reverse (main left, right, cross top, bottom) main to left
+
+        align-items=> how to alignt items on cross axis
+            strech, uses all width adpts to container
+            center: centers on the middle of the cross axis
+            flex-start: elements start on the start of the cross
+
+        justify-content => how to position in the main axis
+
+        align-content=> aling items on the cross axis
+    
+    items
+        order: -1 to begin of main, bigger the later
+        align-self: aligns item towards the main (align-items for item)
+        flex-grow enable items go grow wider than origina in a rate of (param)
+        flex-shink: inverse grow
+        flex-basis: depends of fles-direction, size in main axis
