@@ -106,10 +106,8 @@ main {
 }
 
 .main-nav {
-  display: inline-block;
-  text-align: right;
-  width: calc(100% - 122px);
-  vertical-align: middle;
+  display:none;
+
 }
 
 .main-nav__items {
@@ -173,7 +171,7 @@ main {
 }
 
 .main-footer__link {
-  display: inline-block;
+  display: block;
   margin: 0 1rem;
 }
 
@@ -217,4 +215,24 @@ main {
 
 .open {
   display: block !important;
+}
+
+
+@media (min-width:40rem) {
+  .toggle-button {
+    display: none;
+  }
+
+  .main-nav{
+
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 44px);
+    vertical-align: middle;
+  }
+
+  .main-footer__link {
+    display: inline-block;
+    margin: 0 1rem;
+  }
 }
