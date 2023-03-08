@@ -83,3 +83,16 @@ units
             relative/static: uses the cleset ancestor (block level)
 
         width: 80vhmin usa el 80% del max entre 
+
+        viewport in html=> used to indicate browsers to use css units and not zoom
+        mobile first: build mobile and adpt with media querys to wider
+
+attribute selectors
+    [type] attribute
+    [type="email"] attribute with value
+    [lang ~="eb-us"] value in list
+    [lang |="en"] value o value- ej en-us
+    [href^="#"] prefix, starts with
+    [href$=".de"] suffix ej href=ab.de
+    [src*="cdn"] at least one value ej i.cdn.de
+    [src*="cdn" i] case insensitive ej i.CDN.com
