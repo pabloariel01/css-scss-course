@@ -216,3 +216,7 @@ Sass
         extends rules from other class
         @extend .sass-section
         can use %clas-name to use on inherit only
+
+    mixins
+        @include to use mixin
+        can use @content to allow diamic content
