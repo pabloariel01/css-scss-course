@@ -162,3 +162,15 @@ grid vs flexbox
     grid for templatin and 2 dimensional
     flex for 1 dimension, row or col
     grid for layouts
+
+
+
+transformations
+    transform   moves element visually only
+    transfor-origin: from where it shoud be moved, default=center
+    if we rotateZ, trnaslatex will translate in the ney x axis(diagonal)
+    perspective: distance seen from the element as prop for patent, as transform function, for elements
+    perspective-origin=>from witch direction is seen from
+    trnaslateZ moves towars or away from view
+    backface-visibility=> indicates if back of element should be visible
+    

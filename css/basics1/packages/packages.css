@@ -18,6 +18,7 @@ main {
   margin: 1rem 0;
   background: rgba(14, 79, 31, 0.2);
   position: relative;
+  overflow: hidden;
 }
 
 .plan {
@@ -40,11 +41,15 @@ main {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 1.2rem;
+  margin: 0;
   font-size: 0.8rem;
   color: white;
   background: #ff5454;
   padding: 0.5rem;
+  transform: rotate(45deg) translate(3.5rem, -1rem);
+  transform-origin: center;
+  width: 12rem;
+  text-align: center;
 }
 
 .package__sub-title {
@@ -59,7 +64,7 @@ main {
   background: white;
   font-family: "Roboto", sans-serif;
   font-style: italic;
-  text-shadow: 2px 2px 7px rgb(185,180,180); 
+  text-shadow: 2px 2px 7px rgb(185, 180, 180);
 }
 
 .clearfix {
@@ -115,7 +120,7 @@ main {
   #free {
     border-right: 4px solid #0e4f1f;
   }
-  
+
   #free:hover,
   #free:active {
     border-right-color: #ff5454;
