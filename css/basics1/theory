@@ -183,4 +183,6 @@ transitions
 
 animations
     starts with a keyframe
+    can use alternate to start animation over
     can use forwards(end with final state) backwards(end in first keyframe state) both (starts in finish in states (not normal css defined) )
+    keyframes, cand be from-to or porcentages
