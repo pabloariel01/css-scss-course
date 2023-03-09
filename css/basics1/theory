@@ -186,3 +186,33 @@ animations
     can use alternate to start animation over
     can use forwards(end with final state) backwards(end in first keyframe state) both (starts in finish in states (not normal css defined) )
     keyframes, cand be from-to or porcentages
+
+variables
+    --my-color
+    used var(--my-color, fallback)
+
+@supports
+    adds conditional code for browser support
+
+polyfill
+    js code to give support to not supportes browser css
+
+resets
+    normalize css across brosers
+
+BEM
+    kebab-case
+    .block__element--modifier
+
+Sass
+    list values at right side
+    maps () => $colors: (
+                main: #521751,
+                secondary: #fa923f,
+                );
+    map-get($colors,primary)
+
+    inheritance
+        extends rules from other class
+        @extend .sass-section
+        can use %clas-name to use on inherit only
