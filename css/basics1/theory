@@ -166,6 +166,7 @@ grid vs flexbox
 
 
 transformations
+are hardware accelerated
     transform   moves element visually only
     transfor-origin: from where it shoud be moved, default=center
     if we rotateZ, trnaslatex will translate in the ney x axis(diagonal)
@@ -173,4 +174,13 @@ transformations
     perspective-origin=>from witch direction is seen from
     trnaslateZ moves towars or away from view
     backface-visibility=> indicates if back of element should be visible
-    
+
+
+transitions
+    watches props separated by coma
+    params: prop, how long, timing function for show, delay
+    if display is changes, transitions dont work
+
+animations
+    starts with a keyframe
+    can use forwards(end with final state) backwards(end in first keyframe state) both (starts in finish in states (not normal css defined) )
