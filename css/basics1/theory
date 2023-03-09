@@ -124,3 +124,41 @@ flexbox
         flex-grow enable items go grow wider than origina in a rate of (param)
         flex-shink: inverse grow
         flex-basis: depends of fles-direction, size in main axis
+grid
+    defines the layouut with row and cols
+    each col/row creates a column, starting by 1, cand define how many squares uses with grid-column-start/end and the number of column
+    grid-template-x can use auto to fill remaining space
+    can use repeat(times, size)
+    can use minmax(val1, val2) ensures minimun of val1, but not more than val2
+    grid will try not to verlap, but can be forced
+    cols and rows can have nicknames grid-template-rows: [row-1-start] 5rem [row-1-end row-2-start]  10px
+    can create named ares with string 
+    can create generated areas, when we name a col with same name of a set of rows with x-start/x-end
+
+    elements fixed and absolute are not part of the grid
+      fit-content used to fit content when we kind of know how much we need
+    justify-items: center => fits the content to the center of the area
+        start=> start of readin
+        strech:default
+    align-items: center: content is fit in the verical axis
+    when contaier is bigger than grid used
+
+    justify-content:= postions content in x axis
+    align-content => positions content in y axis
+
+    justify-self => allows to position single elemnt in x axis
+    align-self => positions in y axis
+
+    grid-auto-rows=> auto create rows with size
+    grid-auto-flow: defines if new elements are added as col or rows 
+        row dense => fills empty spaces, may not be optimal  
+
+    cols ony - auto fill and autofit
+    auto-fill => fills with as many as fit in the container
+    auto-fit: will center if extra space for too little
+    auto-fit respects the dom order
+
+grid vs flexbox
+    grid for templatin and 2 dimensional
+    flex for 1 dimension, row or col
+    grid for layouts

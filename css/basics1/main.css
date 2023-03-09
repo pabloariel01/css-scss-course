@@ -19,7 +19,7 @@
   /* background-image: radial-gradient(ellipse farthest-side at 20% 15%, red, blue 50%, green); circle or elipse */
   background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
     url("images/freedom.jpg") center / cover no-repeat, #ff1b68;
-  width: 100vw;
+  /* width: 100vw; */
   height: 33vh;
   position: relative;
 }
